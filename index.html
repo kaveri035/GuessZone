@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess My Number</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🎮 GuessZone
+        </div>
+
+        <div class="nav-links">
+
+        <a href="#guide">
+            📌 Game Guide
+        </a>
+
+    </div>
+
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                WELCOME TO THE GAME ZONE
+            </p>
+
+            <h1>
+                Can You Guess<br>
+                <span>My Number?</span> 🎯
+            </h1>
+
+            <p>
+                Test your luck, trust your instincts
+                and find the secret number between
+                1 and 500.
+            </p>
+
+            <a href="#game" class="play-button">
+                🎮 Start Playing
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="game-section" id="game">
+
+        <div class="game">
+
+            <p class="section-label">
+                YOUR CHALLENGE
+            </p>
+
+            <h2>
+                🎯 Guess My Number
+            </h2>
+
+            <p class="game-description">
+                I've picked a secret number between
+                <b>1 and 500</b>.
+            </p>
+
+
+            <div class="game-input">
+
+                <input
+                    type="number"
+                    id="guess"
+                    placeholder="Enter number"
+                    min="1"
+                    max="500"
+                >
+
+                <button
+                    type="button"
+                    onclick="checkGuess()">
+                    Guess
+                </button>
+
+            </div>
+
+
+            <p id="result"></p>
+
+
+            <button
+                type="button"
+                class="new-game"
+                onclick="newGame()">
+
+                🔄 New Game
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="how-section" id="guide">
+
+        <p class="section-label">
+            GAME GUIDE
+        </p>
+
+        <h2>
+            📌 How To Play
+        </h2>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <span>01</span>
+
+                <h3>
+                    Think
+                </h3>
+
+                <p>
+                    Think of a number between
+                    1 and 500.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>02</span>
+
+                <h3>
+                    Guess
+                </h3>
+
+                <p>
+                    Enter your guess and click
+                    the Guess button.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>03</span>
+
+                <h3>
+                    Win
+                </h3>
+
+                <p>
+                    Keep trying until you discover
+                    the secret number!
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            🎮 GuessZone • Have fun & keep guessing!
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
